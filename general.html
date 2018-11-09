@@ -1,32 +1,33 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="zh-tw" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
  	<meta name="format-detection" content="telephone=no"/>
 
 	<style>
-/* Reset styles */ 
-body { margin: 0; padding: 0; min-width: 100%; width: 100% !important; height: 100% !important;}
-body, table, td, div, p, a { -webkit-font-smoothing: antialiased; text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 100%; }
-table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; border-spacing: 0; }
-img { border: 0; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
-#outlook a { padding: 0; }
-.ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; }
-.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+		/* Reset styles */ 
+		body { margin: 0; padding: 0; min-width: 100%; width: 100% !important; height: 100% !important;}
+		body, table, td, div, p, a { -webkit-font-smoothing: antialiased; text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 100%; }
+		table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; border-spacing: 0; }
+		img { border: 0; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+		#outlook a { padding: 0; }
+		.ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; }
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
 
-/* Rounded corners for advanced mail clients only */ 
-@media all and (min-width: 560px) {
-	.container { border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px; -khtml-border-radius: 8px;}
-}
+		/* Rounded corners for advanced mail clients only */ 
+		@media all and (min-width: 560px) {
+			.container { border-radius: 8px; -webkit-border-radius: 8px; -moz-border-radius: 8px; -khtml-border-radius: 8px;}
+		}
 
-/* Set color for auto links (addresses, dates, etc.) */ 
-a, a:hover {
-	color: #127DB3;
-}
-.footer a, .footer a:hover {
-	color: #999999;
-}
-
+		/* Set color for auto links (addresses, dates, etc.) */ 
+		a, a:hover {
+			color: #127DB3;
+		}
+		.footer a, .footer a:hover {
+			color: #999999;
+		}
  	</style>
 
 	<!-- MESSAGE SUBJECT -->
@@ -99,7 +100,8 @@ a, a:hover {
 			width="560" style="
 			width: 100%;
 			max-width: 560px;
-			color: #000000; font-size: 13px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;"/></a></td>
+			color: #000000; font-size: 13px; margin: 0; padding: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: block;"/></a>
+		</td>
 	</tr>
 
 	<!-- PARAGRAPH -->
@@ -142,7 +144,7 @@ a, a:hover {
 	<!-- LINE -->
 	<!-- Set line color -->
 	<tr>	
-		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;padding-left: 4%; padding-right: 4%; width: 87.5%;
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;padding-left: 4%; padding-right: 4%; width: 92%;
 			padding-top: 25px;" class="line"><hr
 			color="#E0E0E0" align="center" width="100%" size="1" noshade style="margin: 0; padding: 0;" />
 		</td>
@@ -167,10 +169,15 @@ a, a:hover {
 			<table>
 				<tr>
 					<td>姓名</td>
-					<td style="padding-left: 8px;font-size: 16px; font-weight: 400; line-height: 200%;">[change 購買人姓名]</td>
+					<td style="padding-left: 8px;font-size: 16px; font-weight: 400; line-height: 160%;">[change 購買人姓名]</td>
 				</tr>
 				<tr>
-					<td>信箱</td>
+					<td>Email</td>
+					<td style="padding-left: 8px;font-size: 16px; font-weight: 400; line-height: 160%;">[change 購買人信箱]</td>
+				</tr>
+				<tr>
+					<td>電話</td>
+					<td style="padding-left: 8px;font-size: 16px; font-weight: 400; line-height: 160%;">[change 購買人電話]</td>
 				</tr>
 			</table>
 		</td>
@@ -179,7 +186,7 @@ a, a:hover {
 	<!-- LINE -->
 	<!-- Set line color -->
 	<tr>	
-			<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;padding-left: 4%; padding-right: 4%; width: 87.5%;
+			<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;padding-left: 4%; padding-right: 4%; width: 92%;
 				padding-top: 25px;" class="line"><hr
 				color="#E0E0E0" align="center" width="100%" size="1" noshade style="margin: 0; padding: 0;" />
 			</td>
@@ -256,24 +263,37 @@ a, a:hover {
 		</td>
 	</tr>
 
+	<!-- CALCULATE -->
+	<tr>
+		<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 4%; padding-right: 4%; width: 92%; padding-top: 20px; padding-bottom:25px;">
+			<table>
+				<tr>
+					<td align="left" style="border-collapse: collapse; border-spacing: 0; margin: 0; background: #F0F0F0; padding-top: 20px; padding-bottom:25px; padding-left: 4%; width: 100%; display: block;">0
+						
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
 	<!-- LINE -->
 	<!-- Set line color -->
 	<tr>
-		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;
-			padding-top: 25px;" class="line"><hr
-			color="#E0E0E0" align="center" width="100%" size="1" noshade style="margin: 0; padding: 0;" />
-		</td>
-	</tr>
+			<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 4%; padding-right: 4%; width: 92%;
+				padding-top: 25px;" class="line"><hr
+				color="#E0E0E0" align="center" width="100%" size="1" noshade style="margin: 0; padding: 0;" />
+			</td>
+		</tr>
 
 	<!-- PARAGRAPH -->
 	<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
 	<tr>
-		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 160%;
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 92%; font-size: 16px; font-weight: 400; line-height: 160%;
 			padding-top: 20px;
 			padding-bottom: 25px;
 			color: #000000;
 			font-family: sans-serif;" class="paragraph">
-				Have a&nbsp;question? <a href="mailto:support@ourteam.com" target="_blank" style="color: #127DB3; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 160%;">support@ourteam.com</a>
+				Have a question? <a href="mailto:support@ourteam.com" target="_blank" style="color: #127DB3; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 160%;">support@ourteam.com</a>
 		</td>
 	</tr>
 
@@ -338,7 +358,7 @@ a, a:hover {
 	<!-- FOOTER -->
 	<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
 	<tr>
-		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 13px; font-weight: 400; line-height: 150%;
+		<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 4%; padding-right: 4%; width: 92%; font-size: 12px; font-weight: 400; line-height: 160%;
 			padding-top: 20px;
 			padding-bottom: 20px;
 			color: #999999;
