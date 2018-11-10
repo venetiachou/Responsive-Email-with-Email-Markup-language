@@ -1,5 +1,5 @@
 
-##joinSuccessfully 
+## joinSuccessfully 
 
 - 送信時機：消費者加入揪團後寄發信件
 - 標題：揪團通知：已成功加入{{groupName}}！
