@@ -1,39 +1,16 @@
-# Responsive HTML email templates
-Responsive HTML email templates with Sketch app resources and [a social media icons set](https://github.com/konsav/social-icons/). Compatible with all major email clients, including Outlook 2013 for Windows and Gmail for mobile (responsiveness without media queries). Compatibility checklist attached. Live preview available on CodePen.
 
-## General template
-[HTML source](https://github.com/konsav/email-templates/blob/master/general.html) |
-[CodePen preview](http://codepen.io/konsav/pen/yNVyOG) |
-[Sketch app resource](https://raw.githubusercontent.com/konsav/email-templates/master/sketch/general-email-template.sketch)
+##joinSuccessfully 
 
-<img src="https://raw.githubusercontent.com/konsav/email-templates/master/preview/general.png" alt="General template" width="640">
+- 送信時機：消費者加入揪團後寄發信件
+- 標題：揪團通知：已成功加入{{groupName}}！
+- 來自小夥伴的貼心小叮嚀：
+1. logo 請放商家 logo & 連結到官網
+2. 查看優惠進度請直接連到揪團網址
+3. 距離 30% 優惠還差 50 件請幫我換上對的參數
+4. 四個 icon 的分享我都沒有設定，但相信懷恩老師知道我想幹嘛
+5. companyName 放商家名稱，然後還有放上客服網址
 
-## Promotional template
-[HTML source](https://github.com/konsav/email-templates/blob/master/promotional.html) |
-[CodePen preview](http://codepen.io/konsav/pen/gpggmY) |
-[Sketch app resource](https://raw.githubusercontent.com/konsav/email-templates/master/sketch/promotional-email-template.sketch)
 
-<img src="https://raw.githubusercontent.com/konsav/email-templates/master/preview/promotional.png" alt="Promotional template" width="640">
+## Special thanks
+[Konstantin Savchenko](https://github.com/konsav/email-templates) 
 
-## Explorational template
-[HTML source](https://github.com/konsav/email-templates/blob/master/explorational.html) |
-[CodePen preview](http://codepen.io/konsav/pen/PqjVvE) |
-[Sketch app resource](https://raw.githubusercontent.com/konsav/email-templates/master/sketch/explorational-email-template.sketch)
-
-<img src="https://raw.githubusercontent.com/konsav/email-templates/master/preview/explorational.png" alt="Explorational template" width="640">
-
-## Code formatting
-Well commented and readable code. Editable values are indented and submitted to a new line.
-
-<img src="https://raw.githubusercontent.com/konsav/email-templates/master/preview/code.png" alt="Code preview" width="640">
-
-## Сompatibility check (June'15)
-* Apple Mail (Mac OS, iOS iPhone/iPad)
-* Microsoft Outlook (2013 Win, 2011 Mac, iOS, Android, Outlook.com)
-* Google Gmail (Web, Android, iOS)
-* Google Inbox (Android, iOS)
-* Android Mail
-* Mailbox (Android, iOS)
-* Yahoo Mail (Web, Android, iOS
-* Yandex Mail (Web, Android, iOS)
-* Mail.Ru (Web, Android, iOS)
