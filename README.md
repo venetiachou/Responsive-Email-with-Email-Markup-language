@@ -11,6 +11,7 @@
 5. companyName 放商家名稱，然後還有放上客服網址
 6. 有放 schema、有放 schema、有放 schema!!! 我直接放 JSON 一排在 body 最前面，大哥麻煩也對照參數，有些必要的 requirements 你可以看看 Google 的指南文件（附在最下面連結），如果你有困難的你就不要放
 7. preheader 也有參數唷
+8. #00b5ad 這個色碼都是要換成品牌色系的
 
 
 
