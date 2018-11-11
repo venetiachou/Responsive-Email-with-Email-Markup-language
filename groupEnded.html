@@ -31,7 +31,7 @@
  	</style>
 
 	<!-- MESSAGE SUBJECT -->
-	<title>揪團通知：你已成功加入{{groupName}}囉！</title>
+	<title>揪揪團通知：{{groupName}}已結束並成功扣款囉！</title>
 
 </head>
 
@@ -54,7 +54,7 @@
 		},
 			"orderNumber": "{{orderNumber}}",
 			"priceCurrency": "TWD",
-			"price": "尚未確認",
+			"price": "{{price}}",
 			"acceptedOffer": 
 			[
 				{
@@ -113,7 +113,7 @@
 				<!-- Set text color to background color -->
 				<div style="display: none; visibility: hidden; overflow: hidden; opacity: 0; font-size: 1px; line-height: 1px; height: 0; max-height: 0; max-width: 0;
 				color: #F0F0F0;" class="preheader">
-					Hi {{name}}你已成功加入由{{groupLeader}}開團的{{groupName}}。提醒你！目前系統尚未扣款，將於 {{endDateTime}} 時計算揪團總件數、套用正確優惠後再向你索款，您可透過下方按鈕查看揪團目前的現金回饋比例。別忘了分享給更多人，越多人加入優惠越多噢！
+					Hi {{name}} {{groupName}}揪團已結束並扣款完成囉！本次揪團達成優惠為「每筆訂單，享 {{discount}} 優惠」。有任何疑問，請直接聯絡客服噢！
 				</div>
 
 				<!-- LOGO -->
@@ -170,22 +170,7 @@
 				padding-top: 25px; 
 				color: #353e3e;
 				font-family: -apple-system, system-ui, PingFang TC, Noto Sans TC, 微軟正黑體, Helvetica, sans-serif;" class="paragraph">
-				你已成功加入由{{groupLeader}}開團的{{groupName}}。提醒你！<span style="color:#00b5ad;">目前系統尚未扣款</span>，將於 {{endDateTime}} 時計算揪團總件數並套用正確優惠後，再向你索款。<p style="line-height: 160%">你可透過下方按鈕查看揪團目前優惠進度。別忘了分享給更多人，越多人加入，你所享有的優惠越多噢！</p>
-			</td>
-		</tr>
-
-		<!-- BUTTON -->
-		<!-- Set button background color at TD, link/text color at A and TD, font family ("sans-serif" or "Georgia, serif") at TD. For verification codes add "letter-spacing: 5px;". Link format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content={{Button-Name}}&utm_campaign={{Campaign-Name}} -->
-		<tr>
-			<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 4%; padding-right: 4%; width: 87.5%;
-				padding-top: 25px; padding-bottom: 5px;" class="button">
-				<a href="{{groupPath}}" target="_blank" style="text-decoration: none;">
-					<table border="0" cellpadding="0" cellspacing="0" align="center" style="max-width: 240px; min-width: 120px; border-collapse: collapse; border-spacing: 0; padding: 0;"><tr><td align="center" valign="middle" style="text-decoration: none; padding: 12px 24px; margin: 0; border-collapse: collapse; border-spacing: 0; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -khtml-border-radius: 3px;"
-						bgcolor="#00b5ad"><a target="_blank" style="text-decoration: none; color: #FFFFFF; font-family: -apple-system, system-ui, PingFang TC, Noto Sans TC, 微軟正黑體, Helvetica, sans-serif; font-size: 17px; font-weight: 400; line-height: 120%;"
-						href="{{groupPath}}">
-							查看優惠進度
-				</a>
-				</td></tr></table></a>
+				{{groupName}}揪團已結束並扣款完成囉！<p>本次揪團達成優惠為<span style="color: #00b5ad; line-height: 160%">「每筆訂單，享 {{discount}} 優惠」</span>。以下是你的相關明細：</p>
 			</td>
 		</tr>
 
@@ -323,7 +308,7 @@
 					</tr>
 					<tr>
 						<td style="line-height: 150%; font-family: -apple-system, system-ui, PingFang TC, Noto Sans TC, 微軟正黑體, Helvetica, sans-serif;">
-							目前優惠：10%	
+							優惠金額：-$40	
 						</td>
 					</tr>
 					<tr>
@@ -331,10 +316,40 @@
 							運費：$0
 						</td>
 					</tr>
+					<tr>
+							<td style="line-height: 150%; font-family: -apple-system, system-ui, PingFang TC, Noto Sans TC, 微軟正黑體, Helvetica, sans-serif;">
+								<b>付款總金額：$160</b>
+							</td>
+						</tr>
 				</table>
 			</td>
 		</tr>
 
+		<!-- PARAGRAPH -->
+		<tr>
+			<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;padding-left: 4%; padding-right: 4%; width: 87.5%; font-size: 16px; font-weight: 400; line-height: 160%;
+				padding-top: 10px; 
+				color: #353e3e;
+				font-family: -apple-system, system-ui, PingFang TC, Noto Sans TC, 微軟正黑體, Helvetica, sans-serif;" class="paragraph">
+				有任何疑問，歡迎洽詢客服噢！
+			</td>
+		</tr>
+
+		<!-- BUTTON -->
+		<!-- Set button background color at TD, link/text color at A and TD, font family ("sans-serif" or "Georgia, serif") at TD. For verification codes add "letter-spacing: 5px;". Link format: http://domain.com/?utm_source={{Campaign-Source}}&utm_medium=email&utm_content={{Button-Name}}&utm_campaign={{Campaign-Name}} -->
+		<tr>
+				<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 4%; padding-right: 4%; width: 87.5%;
+					padding-top: 25px; padding-bottom: 5px;" class="button">
+					<a href="{{groupPath}}" target="_blank" style="text-decoration: none;">
+						<table border="0" cellpadding="0" cellspacing="0" align="center" style="max-width: 240px; min-width: 120px; border-collapse: collapse; border-spacing: 0; padding: 0;"><tr><td align="center" valign="middle" style="text-decoration: none; padding: 12px 24px; margin: 0; border-collapse: collapse; border-spacing: 0; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -khtml-border-radius: 3px;"
+							bgcolor="#00b5ad"><a target="_blank" style="text-decoration: none; color: #FFFFFF; font-family: -apple-system, system-ui, PingFang TC, Noto Sans TC, 微軟正黑體, Helvetica, sans-serif; font-size: 17px; font-weight: 400; line-height: 120%;"
+							href="{{customerService}}">
+								聯繫客服</a></td></tr>
+						</table>
+					</a>
+				</td>
+			</tr>
+	
 		<!-- LINE -->
 		<!-- Set line color -->
 		<tr>
@@ -353,58 +368,6 @@
 		width="560" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit;
 		max-width: 560px;" class="wrapper">
 
-		<tr>
-			<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 4%; padding-right: 4%; width: 92%; padding-bottom: 20px; font-size: 14px; line-height: 160%; color:#353e3e;font-family: -apple-system, system-ui, PingFang TC, Noto Sans TC, 微軟正黑體, Helvetica, sans-serif;">
-			距離 30% 優惠還差 50 件<br>
-			快點邀請更多人加入，讓所有人可以享更多優惠</td>
-		</tr>
-
-		<!-- SOCIAL NETWORKS -->
-		<!-- Image text color should be opposite to background color. Set your url, image src, alt and title. Alt text should fit the image size. Real image size should be x2 -->
-		<tr>
-			<td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 4%; padding-right: 4%; width: 92%;
-				padding-top: 2px;" class="social-icons"><table
-				width="256" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; border-spacing: 0; padding: 0;">
-				<tr>
-					<!-- ICON 1 -->
-					<td align="center" valign="middle" style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;"><a target="_blank"
-						href="{{sharePath}}"
-					style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
-						color: #000000;"
-						alt="F" title="Facebook"
-						width="44" height="44"
-						src="images/social-icons/facebook.png"></a></td>
-
-					<!-- ICON 2 -->
-					<td align="center" valign="middle" style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;"><a target="_blank"
-						href="{{sharePath}}"
-					style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
-						color: #000000;"
-						alt="T" title="Twitter"
-						width="44" height="44"
-						src="images/social-icons/twitter.png"></a></td>				
-
-					<!-- ICON 3 -->
-					<td align="center" valign="middle" style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;"><a target="_blank"
-						href="{{sharePath}}"
-					style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
-						color: #000000;"
-						alt="G" title="LINE"
-						width="44" height="44"
-						src="images/social-icons/line.png"></a></td>		
-
-					<!-- ICON 4 -->
-					<td align="center" valign="middle" style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;"><a target="_blank"
-						href="{{sharePath}}"
-					style="text-decoration: none;"><img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;
-						color: #000000;"
-						alt="I" title="Email"
-						width="44" height="44"
-						src="images/social-icons/mail.png"></a></td>
-				</tr>
-				</table>
-			</td>
-		</tr>
 
 		<!-- FOOTER -->
 		<!-- Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
