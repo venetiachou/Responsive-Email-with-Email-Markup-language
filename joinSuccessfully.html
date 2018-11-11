@@ -31,7 +31,7 @@
  	</style>
 
 	<!-- MESSAGE SUBJECT -->
-	<title>揪團通知：已成功加入{{groupName}}！</title>
+	<title>揪團通知：你已成功加入{{groupName}}囉！</title>
 
 </head>
 
@@ -42,6 +42,56 @@
 	color: #000000;"
 	bgcolor="#fff"
 	text="#353e3e">
+
+	<!-- SCHEMA -->
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Order",
+			"merchant": {
+				"@type": "Organization",
+				"name": "{{companyName}}"
+		},
+			"orderNumber": "{{orderNumber}}",
+			"priceCurrency": "TWD",
+			"price": "尚未確認",
+			"acceptedOffer": 
+			[
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Product",
+						"name": "{{product}}",
+						"sku": "{{productSku}}",
+						"url": "{{productPath}}",
+						"image": "{{productImage}}"
+					},
+					"price": "{{productPrice}}",
+					"priceCurrency": "TWD",
+					"eligibleQuantity": {
+						"@type": "QuantitativeValue",
+						"value": "{{productQuantity}}"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Product",
+						"name": "{{product}}",
+						"sku": "{{productSku}}",
+						"url": "{{productPath}}",
+						"image": "{{productImage}}"
+					},
+					"price": "{{productPrice}}",
+					"priceCurrency": "TWD",
+					"eligibleQuantity": {
+						"@type": "QuantitativeValue",
+						"value": "{{productQuantity}}"
+					}
+				}
+			]
+		}
+	</script>
 
 	<!-- SECTION / BACKGROUND -->
 	<!-- Set message background color one again -->
@@ -144,7 +194,7 @@
 				<td align="left" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 4%; padding-right: 4%; width: 92%; padding-top: 40px;">
 					<table align="left" style="border-collapse: collapse; border-spacing: 0; margin: 0; background: #F0F0F0; padding-top: 20px; padding-bottom:25px; padding-left: 4%; padding-right: 4% ; width: 92%; display: block; font-size: 16px; color: #353e3e;">
 						<tr>
-							<td style="line-height: 150%; font-family:-apple-system, system-ui, "PingFang TC", "Noto Sans TC", 微軟正黑體, Helvetica, sans-serif;">團員編號：{{orderNumber}}</td>
+							<td style="line-height: 150%; font-family:-apple-system, system-ui, PingFang TC, Noto Sans TC, 微軟正黑體, Helvetica, sans-serif;">團員編號：{{orderNumber}}</td>
 						</tr>
 					</table>
 				</td>
@@ -227,7 +277,7 @@
 						color: #353e3e;
 						font-family: -apple-system, system-ui, PingFang TC, Noto Sans TC, 微軟正黑體, Helvetica, sans-serif;" class="paragraph">
 							<b>{{product}}</b><br/>
-							{{productSku}} x {{quantity}}<br/>
+							{{productSku}} x {{productQuantity}}<br/>
 							$100
 					</td>
 
@@ -254,7 +304,7 @@
 						color: #353e3e;
 						font-family: -apple-system, system-ui, PingFang TC, Noto Sans TC, 微軟正黑體, Helvetica, sans-serif;" class="paragraph">
 							<b>{{product}}</b><br/>
-							{{productSku}} x {{quantity}}<br/>
+							{{productSku}} x {{productQuantity}}<br/>
 							$100
 					</td>
 				</tr>
