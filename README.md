@@ -5,11 +5,11 @@ This is a series of emails I designed for the use of my company.
 
 One thing to be mentioned is that I used **Email Markup language** and **responsive format** for the better user experience.
 
-  It's all in details.
+```It's all in details.```
 
 In addition, I recommend MJML for those who want to create responsive emails rapidly, especially for designers.
 
-  As the saying goes, Sharp tools make good work.
+```As the saying goes, Sharp tools make good work.```
 
 
 ## Special thanks 🙇‍
