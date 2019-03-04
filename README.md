@@ -5,24 +5,39 @@ This is a series of emails I designed for the use of my company.
 
 I used **Email Markup language** and **responsive format** for the better user experience.
 
+
     As we know, It's all in details.
+
 
 In addition, I recommend MJML for those who want to create responsive emails rapidly, especially for designers.
 
+
     As the saying goes, Sharp tools make good work.
 
-## Demo
-![Join to Group Sucessfully](/images/joinSucessfully.jpg) 
+## Demo - Order Confirmation
 
-[Join to Group Sucessfully](https://venetiachou.github.io/demo/joinSucessfully)
+![Order Confirmation](/images/joinSucessfully.jpg) 
+
+[Order Confirmation](https://venetiachou.github.io/demo/joinSucessfully)
+
+
+
+## Demo - Payment Confirmation
+
+![Payment Confirmation](/images/groupEnded.jpg)
 
 [Payment Confirmation](https://venetiachou.github.io/demo/groupEnded)
 
-[Welcome Email for sign-up companies](https://venetiachou.github.io/demo/business-welcome)
+
+## Demo - Welcome Email for signedup companies
+
+![Welcome Email for signedup companies](/images/business-welcome.jpg)
+
+[Welcome Email for signedup companies](https://venetiachou.github.io/demo/business-welcome)
 
 
 ## Special thanks 🙇‍
-[Konstantin Savchenko](https://github.com/konsav/email-templates) 
+[Konstantin Savchenko - Email templates](https://github.com/konsav/email-templates) 
 
 [Gmail - Email Markup](https://developers.google.com/gmail/markup/getting-started)
 
