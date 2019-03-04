@@ -12,6 +12,7 @@ In addition, I recommend MJML for those who want to create responsive emails rap
     As the saying goes, Sharp tools make good work.
 
 ## Demo
+![Join to Group Sucessfully](Responsive-Email-with-Email-Markup-language/images/joinSucessfully.jpg) 
 
 [Join to Group Sucessfully](https://venetiachou.github.io/demo/joinSucessfully)
 
